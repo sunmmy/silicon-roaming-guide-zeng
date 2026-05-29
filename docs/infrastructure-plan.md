@@ -28,10 +28,11 @@
 - `.gitignore`，避免把依赖和构建产物纳入版本管理。
 - 本地版本管理初始化。
 - 更新指南文档。
+- GitHub 远程仓库连接。
+- 第一次同步上传到 GitHub。
 
 尚未完成：
 
-- 远程代码仓库。
 - 自动部署。
 - 域名绑定。
 - 正式托管平台。
@@ -117,8 +118,7 @@ npm run publish
 
 ## 下一步基础设施任务
 
-1. 初始化本地版本管理。
-2. 创建远程 GitHub 仓库。
-3. 连接 Cloudflare Pages 或 Vercel。
-4. 写一份 `docs/update-guide.md`，专门给未来自己看。
-5. 把项目内容迁移为 Markdown 驱动，减少直接改代码。
+1. 连接 Cloudflare Pages 或 Vercel。
+2. 完成第一次自动部署。
+3. 记录部署地址。
+4. 把项目内容迁移为 Markdown 驱动，减少直接改代码。
