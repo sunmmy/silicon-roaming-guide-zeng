@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { profile } from "../data/profile";
+---
+
+<BaseLayout title="关于 | 个人网站" description="关于我的个人介绍与联系方式。">
+  <section class="page-hero compact">
+    <p class="eyebrow">About</p>
+    <h1>关于我</h1>
+    <p>{profile.intro}</p>
+  </section>
+
+  <section class="about-grid">
+    <div class="about-main">
+      <h2>个人介绍</h2>
+      <p>
+        这里先保留为草稿区。你可以告诉我你的专业、经历、关注方向、做过的项目，我会帮你改写成适合网页展示的版本。
+      </p>
+      <p>
+        第一版个人网站不需要一次写得很完整，先把真实信息放进来，后面再慢慢打磨表达。
+      </p>
+    </div>
+    <aside class="contact-panel">
+      <h2>联系</h2>
+      <a href={`mailto:${profile.email}`}>{profile.email}</a>
+      {profile.links.map((link) => (
+        <a href={link.href}>{link.label}</a>
+      ))}
+    </aside>
+  </section>
+</BaseLayout>

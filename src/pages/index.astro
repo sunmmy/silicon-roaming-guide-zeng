@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { profile, projects } from "../data/profile";
+---
+
+<BaseLayout title={`${profile.name} | 个人网站`} description={profile.intro}>
+  <section class="hero-section">
+    <div class="hero-copy">
+      <p class="eyebrow">{profile.role}</p>
+      <h1>{profile.name}</h1>
+      <p class="hero-intro">{profile.intro}</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="/projects">查看项目</a>
+        <a class="button button-secondary" href="/about">了解更多</a>
+      </div>
+    </div>
+    <div class="hero-panel" aria-label="个人网站信息摘要">
+      <div class="signal-card">
+        <span class="signal-label">当前关注</span>
+        <div class="focus-list">
+          {profile.focus.map((item) => <span>{item}</span>)}
+        </div>
+      </div>
+      <div class="metric-row">
+        <div>
+          <strong>3+</strong>
+          <span>精选项目</span>
+        </div>
+        <div>
+          <strong>2026</strong>
+          <span>开始整理</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-heading">
+      <p class="eyebrow">Selected Work</p>
+      <h2>先把重要项目讲清楚</h2>
+    </div>
+    <div class="project-grid">
+      {projects.map((project) => (
+        <article class="project-card">
+          <div class="project-meta">
+            <span>{project.period}</span>
+            <span>{project.role}</span>
+          </div>
+          <h3>{project.title}</h3>
+          <p>{project.summary}</p>
+          <div class="tag-list">
+            {project.tags.map((tag) => <span>{tag}</span>)}
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+</BaseLayout>

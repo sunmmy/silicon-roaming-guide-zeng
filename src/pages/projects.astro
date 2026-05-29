@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { projects } from "../data/profile";
+---
+
+<BaseLayout title="项目 | 个人网站" description="个人项目作品列表。">
+  <section class="page-hero compact">
+    <p class="eyebrow">Projects</p>
+    <h1>项目作品</h1>
+    <p>这里会逐步整理你的代表性项目。第一版先用清晰结构占位，后续替换为真实项目。</p>
+  </section>
+
+  <section class="project-list">
+    {projects.map((project) => (
+      <article class="project-row">
+        <div>
+          <p class="project-kicker">{project.period} · {project.role}</p>
+          <h2>{project.title}</h2>
+          <p>{project.summary}</p>
+        </div>
+        <div class="tag-list">
+          {project.tags.map((tag) => <span>{tag}</span>)}
+        </div>
+      </article>
+    ))}
+  </section>
+</BaseLayout>

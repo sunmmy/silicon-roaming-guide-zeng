@@ -1,0 +1,17 @@
+{
+  "name": "personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "asset:hero": "node scripts/generate-hero-texture.mjs",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.0",
+    "astro": "^5.8.1"
+  },
+  "devDependencies": {}
+}
