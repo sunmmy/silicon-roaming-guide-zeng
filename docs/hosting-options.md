@@ -4,6 +4,12 @@
 
 个人展示网站第一版不建议购买服务器。推荐使用静态网站：代码生成 HTML/CSS/JS 文件，再托管到稳定平台。
 
+当前第一版已经部署到 Cloudflare：
+
+- https://silicon-roaming-guide-zeng.zengli100.workers.dev
+
+这个地址可作为临时线上访问地址，后续再绑定正式域名。
+
 ## 推荐路线
 
 ### 路线 A：稳定优先，适合国内外访问

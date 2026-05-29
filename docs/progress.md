@@ -25,6 +25,9 @@
 - 新增网站更新指南。
 - 连接 GitHub 仓库：`sunmmy/silicon-roaming-guide-zeng`。
 - 完成第一次 GitHub 同步上传。
+- 完成 Cloudflare 自动部署。
+- 获得临时线上地址：`https://silicon-roaming-guide-zeng.zengli100.workers.dev`。
+- 用户已确认线上地址可以正常打开。
 
 ## 当前状态
 
@@ -38,6 +41,6 @@
 - 是否公开邮箱、GitHub、微信、公众号等联系方式。
 - 不希望公开的内容边界。
 - 是否已有头像、项目截图、封面图等素材。
-- 是否采用 Cloudflare Pages 或 Vercel 自动部署。
-- 自动部署完成后的公开访问地址。
+- 正式域名选择与绑定。
+- 小白友好的内容更新流程。
 - 正式部署先走快速上线方案，还是备案后走长期稳定方案。
